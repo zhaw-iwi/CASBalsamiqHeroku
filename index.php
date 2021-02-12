@@ -1,9 +1,6 @@
 <?php
 
-$files = glob(dirname(__FILE__) . "/*..[pP][dD][fF]");
-
-print_r($files);
-print(count($files));
+$files = glob(dirname(__FILE__) . "/*.[pP][dD][fF]");
 
 if (count($files) == 1) {
 	$url = 'http://'.$_SERVER['HTTP_HOST'];
@@ -11,6 +8,8 @@ if (count($files) == 1) {
 	header("Location: " . $url . "/" . $filename);
 } else {
 	print("Achtung, keine oder mehr als eine PDF Datei :-(");
+	print_r($files);
+	print(count($files));
 }
 
 ?>
