@@ -1,4 +1,4 @@
-<?
+<?php
 
 $files = glob(dirname(__FILE__) . "/*..[pP][dD][fF]");
 
