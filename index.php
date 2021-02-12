@@ -1,6 +1,6 @@
 <?
 
-$files = glob(dirname(__FILE__) . "/*.pdf");
+$files = glob(dirname(__FILE__) . "/*..[pP][dD][fF]");
 
 print_r($files);
 print(count($files));
