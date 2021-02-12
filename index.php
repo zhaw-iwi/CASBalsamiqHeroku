@@ -2,7 +2,7 @@
 
 $files = glob(dirname(__FILE__) . "/*.pdf");
 
-print $files;
+print_r $files;
 
 /** if (count($files) == 1) {
 	header($files[0]);
